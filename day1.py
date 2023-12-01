@@ -6,7 +6,7 @@ with open('input.txt', 'r') as file:
         for char in line:
             if char in '0123456789': nums += char
         sum += int(nums[0] + nums[len(nums)-1])
-    print('Day 1: ', sum)
+    print('Part 1: ', sum)
 
 #Part 2
 hm = {
@@ -38,4 +38,4 @@ with open('input.txt', 'r') as file:
                         nums += hm[i]
                         currStr = currStr[len(currStr)-len(i):]
         sum += int(nums[0] + nums[len(nums)-1])
-    print('Day 2: ', sum)
+    print('Part 2: ', sum)
